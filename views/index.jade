@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  form(action="/login")
+    label username
+        input(name="username", value="bob", method="post")
+    label password
+        input(name="password", value="secret")
+
+    input(type="submit") submit
